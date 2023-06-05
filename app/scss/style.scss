@@ -358,6 +358,11 @@ p {
     text-transform: uppercase;
     color: #303030;
     margin-bottom: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.map__tabs-item.current {
+    border: 1px solid rgba(199, 151, 145, 1);
 }
 .map__tabs-item span {
     margin-left: 5px;
@@ -372,6 +377,14 @@ p {
     width: auto;
     height: auto;
     position: absolute;
+    transition: all .3s;
+    opacity: 0;
+}
+.map__pin.active {
+    opacity: 1;
+}
+.map__pin.pin7 {
+    opacity: 1;
 }
 .map__pin.pin1 {
     left: 130px;
