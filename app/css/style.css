@@ -266,6 +266,9 @@ p {
   color: #333333;
   width: 100%;
   max-width: 530px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .district__list {
@@ -397,10 +400,12 @@ p {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -411,8 +416,9 @@ p {
 }
 
 .map__body {
-  width: 100%;
-  max-width: 1200px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,6 +431,9 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .map__tabs {
@@ -445,6 +454,9 @@ p {
           align-items: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .map__title {
@@ -517,7 +529,26 @@ p {
   width: 930px;
   height: 450px;
   position: relative;
-  background: url(../img/map/map.jpg) no-repeat center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.map__img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .map__pin {
@@ -635,6 +666,9 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .features__body {
@@ -657,6 +691,9 @@ p {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .features__title {
@@ -751,6 +788,9 @@ p {
   height: 20px;
   position: absolute;
   top: 120px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .features__body .swiper-button-next:after,
@@ -776,6 +816,15 @@ p {
   .district__info-text {
     max-width: 300px;
   }
+  .map__tabs {
+    width: 240px;
+  }
+  .features__body .swiper-button-next {
+    right: 10px;
+  }
+  .features__body .swiper-button-prev {
+    right: 50px;
+  }
 }
 @media (max-width: 1299px) {
   .district__body {
@@ -794,5 +843,282 @@ p {
   }
   .map {
     padding-left: 80px;
+  }
+  .map__block {
+    width: 920px;
+  }
+  .map__tabs {
+    width: 200px;
+  }
+  .map__pin.pin1 {
+    left: 120px;
+  }
+  .map__pin.pin2 {
+    left: 128px;
+  }
+  .map__pin.pin3 {
+    left: 175px;
+  }
+  .map__pin.pin4 {
+    left: 190px;
+  }
+  .map__pin.pin5 {
+    left: 258px;
+  }
+  .map__pin.pin6 {
+    left: 342px;
+  }
+  .map__pin.pin7 {
+    left: 395px;
+  }
+  .map__pin.pin8 {
+    left: 437px;
+  }
+  .map__pin.pin9 {
+    left: 493px;
+  }
+  .map__pin.pin10 {
+    left: 463px;
+  }
+  .map__pin.pin11 {
+    left: 518px;
+  }
+  .map__pin.pin12 {
+    left: 585px;
+  }
+  .map__pin.pin13 {
+    left: 650px;
+  }
+  .map__pin.pin14 {
+    left: 493px;
+  }
+  .map__pin.pin15 {
+    left: 610px;
+  }
+  .map__pin.pin16 {
+    left: 700px;
+  }
+  .map__pin.pin17 {
+    left: 805px;
+  }
+}
+@media (max-width: 1199px) {
+  .district__body {
+    max-width: 688px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 0px;
+  }
+  .district__title {
+    margin-bottom: 500px;
+  }
+  .district__list {
+    max-width: 688px;
+  }
+  .district__info {
+    padding: 50px 0px 50px 0px;
+  }
+  .district__info-block {
+    max-width: 688px;
+    padding-left: 0px;
+  }
+  .district__info-text {
+    max-width: 320px;
+  }
+  .district__info {
+    height: 1100px;
+  }
+  .district__info-item:last-child {
+    display: none;
+  }
+  .map {
+    max-width: 688px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .map__body {
+    max-width: 688px;
+    overflow-x: scroll;
+  }
+  .map__tabs {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .map__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map__tabs-item {
+    margin-right: 10px;
+  }
+  .map__img {
+    width: auto;
+    height: 100%;
+  }
+  .features__body {
+    max-width: 688px;
+    padding: 60px 0px 60px 0px;
+  }
+  .features__body .swiper-button-next {
+    right: 0px;
+  }
+  .features__body .swiper-button-prev {
+    right: 40px;
+  }
+  .features__slider .swiper-slide:first-child {
+    width: 40%;
+  }
+  .features__slider .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+  .features__slider .swiper-slide:nth-child(3n) {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media (max-width: 767px) {
+  .district__body {
+    max-width: 530px;
+  }
+  .district__info-block {
+    max-width: 530px;
+  }
+  .district__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .district__item {
+    margin-right: 0px;
+  }
+  .map {
+    max-width: 530px;
+  }
+  .map__body {
+    width: 100%;
+  }
+  .features__body {
+    max-width: 530px;
+  }
+  .district__info {
+    height: 1020px;
+  }
+}
+@media (max-width: 577px) {
+  .district__body {
+    max-width: 423px;
+  }
+  .district__info-block {
+    max-width: 423px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map {
+    max-width: 423px;
+  }
+  .features__body {
+    max-width: 423px;
+  }
+  .district__info-list {
+    margin-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .district__title {
+    margin-bottom: 560px;
+  }
+  .district__item {
+    width: 48%;
+  }
+  .features__title {
+    font-size: 32px;
+    max-width: calc(100% - 50px);
+  }
+  .features__slider .swiper-slide:first-child {
+    width: 60%;
+  }
+  .features__slider .swiper-slide:nth-child(2n) {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media (max-width: 449px) {
+  .district__title {
+    font-size: 32px;
+  }
+  .district__body {
+    max-width: 376px;
+  }
+  .district__info-block {
+    max-width: 376px;
+  }
+  .map {
+    max-width: 376px;
+  }
+  .features__body {
+    max-width: 376px;
+  }
+  .district__info {
+    height: 970px;
+  }
+}
+@media (max-width: 399px) {
+  .district__body {
+    max-width: 300px;
+    padding-top: 15px;
+  }
+  .district__info-block {
+    max-width: 300px;
+  }
+  .map {
+    max-width: 300px;
+    padding: 40px 0px;
+  }
+  .district__info {
+    height: 890px;
+  }
+  .district__info-item span {
+    font-size: 28px;
+  }
+  .features__body {
+    max-width: 300px;
+  }
+  .features__slider .swiper-slide:first-child {
+    width: 80%;
+  }
+  .features__body .swiper-button-next,
+  .features__body .swiper-button-prev {
+    display: none;
   }
 }
