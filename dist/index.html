@@ -7,12 +7,14 @@
 	<meta name="Keywords" content="Ульяновская дума">
     <title>Айдем - тестовая задача</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper/swiper-bundle.min.css">
+
 
 </head>
 <body>
     <section class="district">
         <div class="district__body">
-            <h1 class="district__title">Knightsbridge private park – элитный район Лондона в центре</h1>
+            <h1 class="district__title">Knightsbridge private park – элитный район Лондона в центре Москвы</h1>
             <ul class="district__list">
                 <li class="district__item"><img src="img/zaglushka.png" class="district__image" alt=""></li>
                 <li class="district__item"><img src="img/prev1.jpg" class="district__image" alt=""></li>
@@ -23,7 +25,7 @@
             <div class="district__info-block">
                 <ul class="district__info-list">
                     <li class="district__info-item">
-                        <span>156 - 636 м2</span>
+                        <span>156 - 636 м<sup>2</sup></span>
                         Площадь квартир
                     </li>
                     <li class="district__info-item">
@@ -39,10 +41,87 @@
                         Площадь собственного парка
                     </li>
                 </ul>
+                <p class="district__info-text">Жилой комплекс из четырех клубных домов класса де-люкс в английском стиле, расположенный в собственном парке площадью 3 га в районе Хамовники. Авторы интерьеров жилого копмлекса,и дизайна частного парка – дизайнеры мировой величины. Так, общественные зоны оформляет Дэвид Линли, племянник королевы Великобритании и глава компании LINLEY, а настоящий английский парк для жителей</p>
             </div>
         </div>
     </section>
+    <section class="map">
+        <div class="map__tabs">
+            <h2 class="map__title">на карте</h2>
+            <ul class="map__list">
+                <li class="map__tabs-item" data-value="beauty">Красота и здоровье <span>3</span></li>
+                <li class="map__tabs-item" data-value="market">Магазин <span>4</span></li>
+                <li class="map__tabs-item" data-value="teaching">Обучение <span>2</span></li>
+                <li class="map__tabs-item" data-value="kindergarten">Детсад <span>3</span></li>
+                <li class="map__tabs-item" data-value="relax">Отдых и развлечения <span>4</span></li>
+            </ul>
+        </div>
+        <div class="map__body">
+            <div class="map__block">
+                <img src="img/map/map.jpg" class="map__img" alt="">
+                <img src="img/map/learn.png" class="map__pin pin1 active teaching" alt="">
+                <img src="img/map/basket.png" class="map__pin pin2 active market" alt="">
+                <img src="img/map/coffee.png" class="map__pin pin3 active relax" alt="">
+                <img src="img/map/movie.png" class="map__pin pin4 active relax" alt="">
+                <img src="img/map/cosmetic.png" class="map__pin pin5 active beauty" alt="">
+                <img src="img/map/basket.png" class="map__pin pin6 active market" alt="">
+                <img src="img/map/Pin.png" class="map__pin pin7 active" alt="">
+                <img src="img/map/med.png" class="map__pin pin8 active beauty" alt="">
+                <img src="img/map/child.png" class="map__pin pin9 active kindergarten" alt="">
+                <img src="img/map/basket.png" class="map__pin pin10 active market" alt="">
+                <img src="img/map/child.png" class="map__pin pin11 active kindergarten" alt="">
+                <img src="img/map/coffee.png" class="map__pin pin12 active relax" alt="">
+                <img src="img/map/child.png" class="map__pin pin13 active kindergarten" alt="">
+                <img src="img/map/med.png" class="map__pin pin14 active beauty" alt="">
+                <img src="img/map/coffee.png" class="map__pin pin15 active relax" alt="">
+                <img src="img/map/basket.png" class="map__pin pin16 active market" alt="">
+                <img src="img/map/learn.png" class="map__pin pin17 active teaching" alt="">
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="features">
+        <div class="features__body">
+            <h2 class="features__title">особенности работы</h2>
+            <h3 class="features__subtitle">компании Saffari Estate</h3>
+            <div class="swiper features__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/features/01.png" class="features__slider-img" alt="Большая база">
+                    <h4 class="features__slider-title">большая база</h4>
+                    <p class="features__slider-text">У нас самая большая база актуальных и эксклюзивных объектов элитной недвижимости</p>
+                    <a class="features__slider-link">Посмотреть</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/features/02.png" class="features__slider-img" alt="Большая база">
+                    <h4 class="features__slider-title">надежность</h4>
+                    <p class="features__slider-text">Мы гарантируем абсолютую безопасность и конфиденциальность по сделкам</p>
+                    <a class="features__slider-link">Узнать</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/features/03.png" class="features__slider-img" alt="Большая база">
+                    <h4 class="features__slider-title">опыт</h4>
+                    <p class="features__slider-text">Наша команда имеет огромный опыт продаж недвижимости в элитном сегменте</p>
+                    <a class="features__slider-link">Изучить</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/features/04.png" class="features__slider-img" alt="Большая база">
+                    <h4 class="features__slider-title">закрытые</h4>
+                    <p class="features__slider-text">Есть объекты, которые предлагаем только мы</p>
+                    <a class="features__slider-link">Получить</a>
+                  </div>
 
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+<script src="js/lib/swiper-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 </html>

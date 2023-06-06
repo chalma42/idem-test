@@ -61,6 +61,7 @@ function styles() {
 function build() {
     return src([
         'app/css/style.css',
+        'app/css/swiper/*.css',
         'app/fonts/**/*',
         'app/js/**/*.js',
         'app/*.html'
