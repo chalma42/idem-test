@@ -252,6 +252,9 @@ p {
           box-sizing: border-box;
   position: relative;
   z-index: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .district__title {
@@ -318,6 +321,9 @@ p {
   position: absolute;
   top: 257px;
   left: 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .district__info-block {
@@ -336,10 +342,16 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .district__info-list {
   margin-right: 60px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .district__info-item {
@@ -376,6 +388,9 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #303030;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .map {
@@ -483,6 +498,12 @@ p {
   transition: all 0.3s;
 }
 
+.map__tabs-item:hover {
+  border: 1px solid rgb(199, 151, 145);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
 .map__tabs-item.current {
   border: 1px solid rgb(199, 151, 145);
 }
@@ -494,8 +515,9 @@ p {
 
 .map__block {
   width: 930px;
-  height: auto;
+  height: 450px;
   position: relative;
+  background: url(../img/map/map.jpg) no-repeat center;
 }
 
 .map__pin {
@@ -745,4 +767,32 @@ p {
 .features__body .swiper-button-prev {
   left: auto;
   right: 160px;
+}
+
+@media (max-width: 1399px) {
+  .district__info-list {
+    margin-right: 40px;
+  }
+  .district__info-text {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1299px) {
+  .district__body {
+    padding-left: 80px;
+    padding-top: 60px;
+  }
+  .district__info {
+    height: 430px;
+  }
+  .district__info-block {
+    padding-left: 80px;
+    padding-top: 0px;
+  }
+  .district__info-list {
+    margin-right: 25px;
+  }
+  .map {
+    padding-left: 80px;
+  }
 }
